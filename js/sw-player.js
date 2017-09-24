@@ -22,7 +22,6 @@ swPlayer.loadSong = function(ID) {
 	swPlayer.elem.title.html(swPlayer.currentSong.title);
 	swPlayer.elem.playlistItems.removeClass("selected");
 	swPlayer.elem.playlistItems.eq(ID).addClass("selected");
-	
 }
 
 swPlayer.playSong = function(ID) {
@@ -30,8 +29,10 @@ swPlayer.playSong = function(ID) {
 	swPlayer.elem.player.play();
 }
 
+
 // init
 $( document ).ready(function() {
+	console.log("init audio player...");
 	swPlayer.elem.seekslider = $("input[sw-audio-seekslider]");
 	swPlayer.elem.player = $("[sw-audio-player]").get(0);
 	swPlayer.elem.playlist = $("[sw-playlist][for]");
@@ -39,6 +40,8 @@ $( document ).ready(function() {
 	// swPlayer.elem.player = new Audio();
 	swPlayer.elem.title = $("[sw-audio-title]").first();
 	swPlayer.loadSong( 0 );
+	swPlayer.play = swPlayer.elem.player.play;
+	swPlayer.pause = swPlayer.elem.player.pause;
 	// swPlayer.elem.player.play();
 /*
 	swPlayer.elem.player.ontimeupdate = function() {
@@ -47,4 +50,6 @@ $( document ).ready(function() {
 */
 });
 
+
+// https://stackoverflow.com/questions/12314345/custom-progress-bar-for-audio-and-progress-html5-elements
 
