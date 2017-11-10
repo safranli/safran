@@ -10,7 +10,7 @@
 /* Basic */
 
 	body, #skel-layers-wrapper {
-		background: #f3f6fa;
+		background: #f2efea;
 	}
 
 	body.is-loading * {
@@ -106,6 +106,35 @@
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
+
+    .video:after {
+        content: "a";
+        display: block;
+    }
+
+/* Logo */
+
+    #logo {
+        position: absolute;
+        top: 28px;
+        height: 7vw;
+        width: 15vw;
+        background: url(../images/logo-safran-white-shadow.svg) no-repeat center center;
+        background-size: contain;
+        text-indent: -8000px;
+    }
+    #header.alt #logo {
+        opacity: 0;
+    }
+
+    #title {
+        height: 14vw;
+        width: 28vw;
+        background: url(../images/logo-safran-white-shadow.svg) no-repeat center center;
+        background-size: contain;
+        text-indent: -8000px;
+    }
+
 
 /* Section/Article */
 
@@ -524,7 +553,7 @@
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		.button:hover {
-			background: rgba(188, 202, 206, 0.15);
+			background: rgba(188, 202, 206, 0.5);
 			border-color: inherit;
 		}
 
@@ -532,8 +561,7 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: rgba(136,0,77,0.8);
-			border-color: #88004d;
+			background: rgba(242, 195, 73, .9);
 			color: white !important;
 		}
 
@@ -541,8 +569,7 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #b40066 !important;
-				border-color: #b40066 !important;
+			    background: rgba(242, 195, 73, .7) !important;
 			}
 
 		input[type="button"].fit,
@@ -573,12 +600,18 @@
 		}
 
 		.wrapper.style2 {
+		/*
 			background-color: #88004d;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
+		*/
+		    /* http://www.heropatterns.com/ */
+		    background-color: hsla(296, 20%, 65%, 1);
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f7c7da' fill-opacity='0.12' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
 			color: white;
+			background-size: 30px;
 		}
 
 			.wrapper.style2 .button:hover {
@@ -615,7 +648,7 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: white;
+		background: rgba(255,255,255,.85);
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
@@ -639,11 +672,18 @@
 
 		#header nav {
 			letter-spacing: 0.075em;
+			text-transform: uppercase;
+			/*
 			position: absolute;
 			right: 1.5em;
-			text-transform: uppercase;
 			top: 0.75em;
+			*/
+			float: right;
 		}
+
+			#header nav ul {
+				margin: 0;
+			}
 
 			#header nav ul li {
 				display: inline-block;
@@ -792,16 +832,19 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("../images/selection/_DSC9786c.jpg");
+		height: 100vh;
+		max-height: 100vw;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		color: white;
 		cursor: default;
-		padding: 22em 0 2em 0;
+		padding: 1px 0 !important;
 		text-align: center;
 	}
 
+        #banner .bannerspacer { height: 33vh; max-height: 33vw; }
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -815,9 +858,10 @@
 			animation-fill-mode: forwards;
 			/* background: rgba(52, 27, 43, 0.5); */
 			color: white;
+			text-shadow: 0px 0px 20px rgba(0, 0, 0, .8);
 			display: inline-block;
 			opacity: 0;
-			padding: 3em;
+			padding: 6em;
 			text-align: center;
 		}
 
@@ -896,25 +940,28 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("../images/selection/_DSC9725_stamp2.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		color: white;
-		padding: 5em;
+		padding: 32vw 5em 0 5em;
 		text-align: center;
+		height: 70vw;
+		min-height: 350px;
 	}
 
-		#cta header {
-			margin-bottom: 2em;
-		}
+    #cta header {
+        margin-bottom: 2em;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, .8);
+    }
 
 /* Footer */
 
 	#footer {
 		background: #e8eef4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 2em 2em 2em 2em;
 		text-align: center;
 	}
 

@@ -46,29 +46,7 @@
 			padding: 0 2.5em;
 		}
 
-		.wrapper.style2 {
-			background-size: 15em;
-		}
-
 		.wrapper.style4 {
 			padding: 2.5em;
 		}
 
-/* Banner */
-
-	#banner {
-		background-size: 15em, 15em, auto, cover;
-	}
-
-/* Main */
-
-	#main {
-		background-size: 15em;
-	}
-
-/* CTA */
-
-	#cta {
-		background-size: 15em, 15em, auto, cover;
-		padding: 3em;
-	}
