@@ -18,7 +18,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="js/sw-player.js"></script>
+		<!-- script src="js/sw-player.js"></script -->
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -40,7 +40,7 @@
 				<nav id="nav">
 					<ul>
 						<li class="current"><a href="#banner" class="scrolly">Home</a></li>
-						<li class="current"><a href="#Hoerproben" class="scrolly">Hören</a></li>
+						<li class="current"><a href="#Konzertausschnitte" class="scrolly">Hören</a></li>
 						<li class="current"><a href="#Bios" class="scrolly">Bios</a></li>
 						<li class="current"><a href="#Programm" class="scrolly">Programm</a></li>
 						<!--
@@ -87,7 +87,7 @@
 					goldgelber Klänge.</p>
 					<footer>
 						<ul class="buttons vertical">
-							<li><a href="#Hoerproben" class="button /*fit*/ scrolly">Konzertausschnitte</a></li>
+							<li><a href="#Konzertausschnitte" class="button /*fit*/ scrolly">Konzertausschnitte</a></li>
 						</ul>
 					</footer>
 
@@ -106,119 +106,16 @@
 				</header>
 
 				<!-- One -->
-					<section class="wrapper style3 container special" id="Hoerproben">
-
-						<header class="major">
-							<h2><strong>Konzert</strong>ausschnitte</h2>
-						</header>
-
-						<div class="row">
-							<div class="6u 12u(narrower)">
-
-								<section>
-									<div class="image featured no-image">
-										<video id="video1" width="100%" controls="">
-											<source src="media/Safran-Adventskonzert-2014.mp4" type="video/mp4">
-											<!-- source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" -->
-											Your browser does not support HTML5 video.
-										</video>
-									</div>
-									<header>
-										<h3>Video</h3>
-										<div sw-playlist style="margin-bottom:2em;">
-											<a onclick="$('video').get(0).play()" class="selected">Aritunian, 4. Satz <i class="fa fa-play-circle"></i></a>
-										</div>
-									</header>
-									<p>Live-Aufnahme Adventskonzert 2014</p>
-								</section>
-
-							</div>
-							<div class="6u 12u(narrower)">
-
-								<section>
-									<div class="image featured">
-										<img src="images/pic03b.jpg" alt="" />
-										<audio id="audio1" controls sw-audio-player style="position:absolute; bottom:0; left:0; padding:5px;">
-											<source src="media/Alle-Voegel-sind-schon-da.mp3" type="audio/mpeg">
-											Your browser does not support the audio element.
-										</audio>
-									</div>
-									<header>
-										<h3>Audio</h3>
-										<!-- 
-										<input sw-audio-seekslider type="range" min="0" max="100" value="0" step="1">
-										<table sw-audio-controls>
-											<tr><td><i class="fa fa-angle-left sw-audio-button-large"></i><td></td><td><button id="playpausebtn">play</button><i class="fa fa-play-circle"></i>&nbsp;<span sw-audio-title>Klangblüten</span></td><td><i class="fa fa-angle-right sw-audio-button-large"></i><td></td></tr>
-										</table>
-										-->
-										<div sw-playlist for="audio1" style="margin-bottom:2em;">
-											<a onclick="swPlayer.playSong(0)">Improvisation «Alle Vögel sind schon da» <i class="fa fa-play-circle"></i></a>
-											<a onclick="swPlayer.playSong(1)">Emmentaler <i class="fa fa-play-circle"></i></a>
-											<a onclick="swPlayer.playSong(2)">Improvisation «D'Zyt isch da» <i class="fa fa-play-circle"></i></a>
-											<a onclick="swPlayer.playSong(3)">Bim Elmi z'Bi <i class="fa fa-play-circle"></i></a>
-										</div>
-									</header>
-									<p>Live-Aufnahmen aus verschiedenen Konzerten</p>
-								</section>
-
-							</div>
-						</div>
-
-						<!--
-						<footer class="major">
-							<ul class="buttons">
-								<li><a href="#" class="button">See More</a></li>
-							</ul>
-						</footer>
-						-->
-
-					</section>
-
-				<!-- Two -->
-					<section class="wrapper style1 container special" id="Bios">
-						<div style="height:4em">&nbsp;</div>
-						<div class="row">
-							<div class="4u 12u(narrower)">
-
-								<section>
-									<img src="images/DSC0044c.jpg" style="height: 200px;" />
-									<header>
-										<h3>Susanne John</h3>
-									</header>
-									<p>ist in Interlaken aufgewachsen. Das Lehrdiplom für Klarinette erwarb sie in Bern bei Kurt Weber. Anschliessend studierte sie bei Hans-Dietrich Klaus in Detmold (D) und legte ihre künstlerische Reifeprüfung ab. In den Jahren 2000/01 war sie Stipendiatin der Ernst-Göhner-Stiftung. Seit 2001 lebt sie als freischaffende Musikerin im Raum Zürich mit Schwerpunkt Kammermusik. Ebenso verfügt sie über Erfahrungen als Solistin. Ihre Konzerttätigkeit führte sie u.a. nach Deutschland, Polen und Kuba. Sie leitet das Ensemble Safran und begeistert sich für Klezmer Musik.</p>
-								</section>
-
-							</div>
-							<div class="4u 12u(narrower)">
-
-								<section>
-									<img src="images/DSC0013c.jpg" style="height: 200px;" />
-									<header>
-										<h3>Annkatrin Isaacs</h3>
-									</header>
-									<p>wurde in Hamburg geboren. Sie studierte Klavier an der Musikhochschule Detmold und Liedbegleitung an der Musikhochschule Stuttgart. Dort folgten Engagements am Staatstheater Stuttgart sowie ein Lehrauftrag für Korrepetition an der dortigen Opernschule. Seit 2003 arbeitet sie als Korrepetitorin am Internationalen Opernstudio Zürich. Daneben führte sie ihre freischaffende Probenarbeit und Konzerttätigkeit mit Sängern und Chören nach Österreich, Ungarn, Italien, Kroatien, Kuba und in die USA. Gerne arrangiert sie verschiedenste Musik für unser Ensemble.</p>
-								</section>
-
-							</div>
-							<div class="4u 12u(narrower)">
-
-								<section>
-									<img src="images/DSC9934c.jpg" style="height: 200px;" />
-									<header>
-										<h3>Tabea Kämpf</h3>
-									</header>
-									<p>ist aufgewachsen in St. Gallen. Nach der Matura absolvierte sie ihr Violinstudium in Basel bei Alexander van Wijnkoop und Adelina Oprean (Lehr- und Konzertdiplom). Es folgte ein Orgelstudium in den Niederlanden und bei Heinz Balli in Bern (Zusatzdiplom für Orgelspiel). Während neun Jahren war Franziska Violinlehrerin an der Musikschule Stetten-Künten, von 2005 bis 2013 Organistin der Kirchgemeinde Zürich Hirzenbach. Gegenwärtig ist sie als freischaffende Künstlerin im Raum Zürich tätig. Sie hat uns mit ihrer Liebe zur Schweizer Volksmusik angesteckt.</p>
-								</section>
-
-							</div>
-						</div>
-					</section>
-
-				<!-- Gallery -->
-					<section class="wrapper style1 container special-alt" id="Programm">
+					<section class="wrapper style1 container special-alt" id="Konzertausschnitte">
 	
 		<div id="gallery" style="display:none;">
+		<!-- IMPORTANT: in "unitegallery.min.js" set "tile_videoplay_icon_always_on" to "always" -->
 		
+            <img alt="«Salut d´Amour»" class="video"
+			     data-type="youtube"
+			     data-videoid="D5hGSlcYL8o"
+			     data-description="«Salut d´Amour»">
+
 			<img alt="Susanne John" src="images/DSC0044c.jpg"
 				data-image="images/DSC0044c.jpg"
 				data-description="Susanne John">
@@ -227,6 +124,12 @@
 				data-image="images/DSC0013.jpg"
 				data-description="Annkatrin Isaacs">
 			
+            <img alt="Länder Medley" class="video"
+			     data-type="youtube"
+			     data-videoid="r69LYTANskQ"
+			     data-description="Länder Medley"
+			     data-isvideo="true">
+
 			<img alt="Tabea Kämpf" src="images/DSC9934c.jpg"
 				data-image="images/DSC9934.jpg"
 				data-description="Tabea Kämpf">
@@ -235,10 +138,10 @@
 				data-image="images/DSC0165.jpg"
 				data-description="">
 		
-            <img alt="Youtube Without Images" class="video"
+            <img alt="Klezmer «7:40 (Zugabfahrt)»" class="video"
 			     data-type="youtube"
-			     data-videoid="A3PDXmYoF5U"
-			     data-description="Youtube video description">
+			     data-videoid="PGfQlOWAVbc"
+			     data-description="Klezmer «7:40 (Zugabfahrt)»">
 
 			<img alt="" src="images/DSC9786.jpg"
 				data-image="images/DSC9786.jpg"
@@ -280,6 +183,59 @@
 		</script>
 
 					</section>
+
+				<!-- Two -->
+					<section class="wrapper style1 container special" id="Bios">
+						<div style="height:4em">&nbsp;</div>
+						<div class="row">
+							<div class="4u 12u(narrower)">
+
+								<section>
+									<img src="images/DSC0044c.jpg" style="height: 200px;" />
+									<header>
+										<h3>Susanne John</h3>
+									</header>
+									<p>ist in Interlaken aufgewachsen. Das Lehrdiplom für Klarinette erwarb sie in Bern bei Kurt Weber. Anschliessend studierte sie bei Hans-Dietrich Klaus in Detmold (D) und legte ihre künstlerische Reifeprüfung ab. In den Jahren 2000/01 war sie Stipendiatin der Ernst-Göhner-Stiftung. Seit 2001 lebt sie als freischaffende Musikerin im Raum Zürich mit Schwerpunkt Kammermusik. Ebenso verfügt sie über Erfahrungen als Solistin. Ihre Konzerttätigkeit führte sie u.a. nach Deutschland, Polen und Kuba. Sie leitet das Ensemble Safran und begeistert sich für Klezmer Musik.</p>
+									<p><a href="http://klarinette.li/" target="_blank">klarinette.li</a></p>
+								</section>
+
+							</div>
+							<div class="4u 12u(narrower)">
+
+								<section>
+									<img src="images/DSC0013c.jpg" style="height: 200px;" />
+									<header>
+										<h3>Annkatrin Isaacs</h3>
+									</header>
+									<p>wurde in Hamburg geboren. Sie studierte Klavier an der Musikhochschule Detmold und Liedbegleitung an der Musikhochschule Stuttgart. Dort folgten Engagements am Staatstheater Stuttgart sowie ein Lehrauftrag für Korrepetition an der dortigen Opernschule. Seit 2003 arbeitet sie als Korrepetitorin am Internationalen Opernstudio Zürich. Daneben führte sie ihre freischaffende Probenarbeit und Konzerttätigkeit mit Sängern und Chören nach Österreich, Ungarn, Italien, Kroatien, Kuba und in die USA. Gerne arrangiert sie verschiedenste Musik für unser Ensemble.</p>
+									<p><a href="http://www.isaacs.ch/annkatrin" target="_blank">isaacs.ch/annkatrin</a></p>
+								</section>
+
+							</div>
+							<div class="4u 12u(narrower)">
+
+								<section>
+									<img src="images/DSC9934c.jpg" style="height: 200px;" />
+									<header>
+										<h3>Tabea Kämpf</h3>
+									</header>
+									<p>Tabea Kämpf wuchs in Bern auf. Sie studierte in ihrer Heimatstadt an der Hochschule der Künste Geige. Während des Studiums entwickelte die Musikerin immer mehr eine Vorliebe für den warmen Klang der Bratsche. Nachdem sie im Sommer 2008 ihr Diplom mit Auszeichnung abschloss, studierte sie an der Hochschule für Musik Hanns Eisler in Berlin Bratsche. Es folgte ein Orchesterpraktikum im Sinfonieorchester Basel und der Tonhalle Zürich, wo sie immer noch regelmäßig spielt. Konzerte und Projekte führten sie in Länder wie die Schweiz, Deutschland, Österreich, Island, Italien, England, Finnland, Polen, Ungarn, Rumänien, Russland und die USA.</p>
+									<p><a href="http://www.tabeakaempf.com/" target="_blank">tabeakaempf.com</a></p>
+								</section>
+
+							</div>
+						</div>
+					</section>
+
+				<!-- Media ->
+					<section class="wrapper style3 container special" id="Hoerproben">
+
+						<header class="major">
+							<h2><strong>Konzert</strong>ausschnitte</h2>
+						</header>
+
+					</section>
+				-->
 
 				<!-- Three -->
 					<section class="wrapper style2 container special-alt" id="Programm">
