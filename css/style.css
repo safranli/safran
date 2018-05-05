@@ -189,6 +189,23 @@
 		background-color: #3b5998;
 	}
 
+
+/* Custom Section Agenda */
+
+	#Termine {
+		text-align:left;
+	}
+
+	#Termine h3 {
+		margin-bottom: 0;
+		font-weight: 400;
+	}
+
+	#Termine p {
+		margin-bottom: 0;
+	}
+
+
 /* Section/Article */
 
 	section.special, article.special {
