@@ -682,7 +682,7 @@
 			background-size: 25em, 25em;
 		*/
 			background-image: url("../images/2020/Tapete2-hell.png");
-			background-size: cover;
+			background-size: contain;
 			color: white;
 		    /* http://www.heropatterns.com/ */
 			/*
