@@ -913,6 +913,7 @@
 		background-color: #645862;
 		background-image: url("../images/2020/Salon(41von46)c.jpg");
 		height: 120vw /*100vh*/;
+		min-height: 80vh;
 		/*max-height: 100vw;*/
 		background-position: top center;
 		background-repeat: no-repeat;
