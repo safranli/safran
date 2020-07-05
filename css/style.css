@@ -200,6 +200,10 @@
 		text-align:left;
 	}
 
+	#Termine h2 {
+		width: 100%;
+	}
+
 	#Termine h3 {
 		margin-bottom: 0;
 		font-weight: 400;
@@ -207,6 +211,10 @@
 
 	#Termine p {
 		margin-bottom: 0;
+	}
+
+	#Termine div div {
+		width: 100%;
 	}
 
 
