@@ -1,4 +1,30 @@
 $(document).ready(function(){
+    $("#2022Extend").click(function() {
+        if ($("#2022Container").is(":hidden")) {
+            $('#2022Container').show();
+            $('#2022Extend i').attr("class", "fas fa-caret-right");
+            $('#2022Extend i').attr("class", "fas fa-caret-down");
+        }
+        else {
+            $('#2022Container').hide();
+            $('#2022Extend i').attr("class", "fas fa-caret-down");
+            $('#2022Extend i').attr("class", "fas fa-caret-right");
+        }
+    });
+
+    $("#2021Extend").click(function() {
+        if ($("#2021Container").is(":hidden")) {
+            $('#2021Container').show();
+            $('#2021Extend i').attr("class", "fas fa-caret-right");
+            $('#2021Extend i').attr("class", "fas fa-caret-down");
+        }
+        else {
+            $('#2021Container').hide();
+            $('#2021Extend i').attr("class", "fas fa-caret-down");
+            $('#2021Extend i').attr("class", "fas fa-caret-right");
+        }
+    });
+
     $("#2020Extend").click(function() {
         if ($("#2020Container").is(":hidden")) {
             $('#2020Container').show();
