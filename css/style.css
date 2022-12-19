@@ -925,7 +925,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("../images/2020/Salon(41von46)c.jpg");
+		background-image: url("../images/2022/zirkus/titlec.jpg");
 		height: 120vw /*100vh*/;
 		min-height: 80vh;
 		/*max-height: 100vw;*/
@@ -1034,7 +1034,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("../images/2020/Wintergarten(4von11).jpg");
+		background-image: url("../images/2022/zirkus/sofac.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
