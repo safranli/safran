@@ -1,4 +1,17 @@
 $(document).ready(function(){
+    $("#2026Extend").click(function() {
+        if ($("#2026Container").is(":hidden")) {
+            $('#2026Container').show();
+            $('#2026Extend i').attr("class", "fas fa-caret-right");
+            $('#2026Extend i').attr("class", "fas fa-caret-down");
+        }
+        else {
+            $('#2026Container').hide();
+            $('#2026Extend i').attr("class", "fas fa-caret-down");
+            $('#2026Extend i').attr("class", "fas fa-caret-right");
+        }
+    });
+
     $("#2025Extend").click(function() {
         if ($("#2025Container").is(":hidden")) {
             $('#2025Container').show();
